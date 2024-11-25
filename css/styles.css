@@ -1,0 +1,615 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    
+    background-color: #fffcfc;
+    color: white;
+    position: relative;
+    text-align: none;
+    position: fixed; /* Hacemos que el header quede fijo en la parte superior */
+    top: 0; /* Aseguramos que se quede en la parte superior */
+    left: 0; /* Aseguramos que esté alineado a la izquierda */
+    width: 100%; /* El ancho debe ocupar todo el espacio disponible */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para que el header resalte */
+}
+
+nav {
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+nav .logo img {
+    width: 50%;
+}
+
+/* Icono del menú */
+.header__principal-ico-menu {
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    
+}
+
+/* Menú desplegable */
+.nav-links {
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #4d40e6f5;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    z-index: 1000;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Se mejora la transición */
+}
+
+
+/* Menú visible cuando tiene la clase 'active' */
+.nav-links.active {
+    max-height: 500px; /* Ajusta el valor a lo que necesites dependiendo del contenido */
+    opacity: 1; /* El menú se hace visible */
+}
+
+/* Estilo para los elementos del menú */
+.nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #444;
+}
+.nav-links li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Carrusel */
+#banner {
+    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20%;
+    z-index: 0;
+    background-color: #483acb17;
+}
+
+.carousel {
+    display: flex;
+    width: 200%;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Si quieres darle un efecto hover a la imagen también */
+.carousel-item a:hover img {
+    opacity: 0.8; /* Cambia la opacidad al pasar el ratón por encima */
+}
+
+/* Sección Sobre Nosotros */
+.empresa {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.empresa h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.empresa p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+#banner .carousel-item img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: relative;
+}
+
+/* Si el mapa no se ve bien con el layout, puedes ajustar la imagen */
+#banner {
+    position: relative;
+}
+
+/* Habilitar desplazamiento suave en toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Sección de contacto */
+.contacto-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contacto-section h2 {
+    font-size: 2rem;
+    color: #5D5D5D;
+    margin-bottom: 20px;
+}
+
+.contacto-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Estilos del formulario */
+.contacto-formulario {
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-formulario label {
+    align-self: flex-start;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.contacto-formulario button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto-formulario button:hover {
+    background-color: #2980b9;
+}
+
+.contacto-formulario button:active {
+    background-color: #1c5980;
+}
+
+/* Estilos adicionales de la página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+/* Estilos para la sección Sobre Nosotros */
+.empresa {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.empresa h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.empresa-imagen {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px; /* Limitar el tamaño máximo de la imagen */
+}
+
+.empresa-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Agregar bordes redondeados a la imagen */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.empresa-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Asegura que se acomoden bien en pantallas pequeñas */
+}
+
+.misión, .visión {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    flex-basis: 48%; /* Toma el 48% del espacio, dejando un pequeño espacio entre los elementos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.misión h3, .visión h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.misión p, .visión p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .empresa-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .misión, .visión {
+        flex-basis: 80%; /* En pantallas pequeñas, ocuparán más espacio */
+        margin-bottom: 20px;
+    }
+}
+
+.banner3medio img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección de Planes de Suscripción */
+.planes {
+    border-radius: 10px;
+    padding: 60px 20px;
+    background-color: #887cde29;
+    text-align: center;
+}
+
+.planes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.planes-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 1.5rem;
+    color: #2ecc71;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.beneficios {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-plan {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-plan:hover {
+    background-color: #2980b9;
+}
+
+.plan:hover {
+    transform: translateY(-5px); /* Efecto hover */
+    box-shadow: 0 10px 15px rgb(73 57 209 / 45%) /* Sombra al hacer hover */
+}
+
+.faq {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.faq-contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra cuando el ratón pasa sobre la pregunta */
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none; /* Ocultamos las respuestas por defecto */
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Mostramos la respuesta solo cuando el item tiene la clase 'active' */
+}
+
+/* Estilo para el icono de la flecha o cualquier otro indicador visual */
+.faq-question::after {
+    content: ' ▼';
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.faq-item.active .faq-question::after {
+    content: ' ▲'; /* Cambiamos el símbolo cuando está activo */
+}
+/* Menú desplegable */
+.nav-links {
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #4d40e6f5;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    z-index: 1000;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Menú visible cuando tiene la clase 'active' */
+.nav-links.active {
+    max-height: 500px; /* Ajusta el valor a lo que necesites dependiendo del contenido */
+    opacity: 1; /* El menú se hace visible */
+}
+
+/* Estilo para los elementos del menú */
+.nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #444;
+}
+.nav-links li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+/* Estilos para las preguntas frecuentes */
+.faq-container {
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-answer {
+    display: none; /* Las respuestas están ocultas por defecto */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Cuando la clase 'active' está presente, se muestra la respuesta */
+}
+
+.faq-question {
+    cursor: pointer; /* Hacer que las preguntas sean clicables */
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: #007bff; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos generales para el contenedor de las preguntas frecuentes */
+.faq-container {
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* Inicialmente, las respuestas están ocultas */
+.faq-answer {
+    display: none;  /* Se ocultan por defecto */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Cuando la clase 'active' se agrega al contenedor del FAQ, mostramos la respuesta */
+.faq-item.active .faq-answer {
+    display: block;  /* Mostramos la respuesta */
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: #007bff;
+}
+
+/* Al principio, las respuestas están ocultas */
+.faq-answer {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out; /* Transición suave */
+}
+
+/* Cuando la pregunta está activa, mostramos la respuesta con un deslizamiento */
+.faq-item.active .faq-answer {
+    display: block; /* Asegúrate de que el contenido se muestre */
+    max-height: 500px; /* Un valor alto para permitir el deslizamiento */
+    transition: max-height 0.5s ease-in; /* Transición para el deslizamiento */
+}
+/* Estilo para resaltar las descripciones */
+.resaltado {
+    background-color: #f9f9f9;  /* Fondo gris claro para resaltar */
+    padding: 20px;              /* Espaciado alrededor del contenido */
+    border-radius: 10px;        /* Bordes redondeados */
+    margin-bottom: 20px;        /* Espaciado entre las secciones */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    font-size: 1.1em;           /* Aumentar ligeramente el tamaño del texto */
+}
+
+.resaltado p {
+    color: #333;               /* Color de texto más oscuro */
+    line-height: 1.6;           /* Mejorar la legibilidad */
+}
+
+/* Opcional: Agregar un borde o algún efecto adicional */
+.resaltado:hover {
+    background-color: #e0e0e0;  /* Cambio de color al pasar el mouse */
+    transition: background-color 0.3s ease;  /* Transición suave */
+}
+
+.faq-answer {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
