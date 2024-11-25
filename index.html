@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" width="100">
+                </a>
+            </div>
+    
+            <!-- Botón del menú para móviles -->
+            <img id="ico-menu" src="assets/images/menu.png" alt="Menú" width="20" height="15" class="header__principal-ico-menu">
+    
+            <!-- Menú de navegación -->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Carrusel -->
+<section id="banner">
+    <div class="carousel">
+        <div class="carousel-item active">
+            <!-- Envolvemos la imagen en un enlace -->
+            <a href="#planes">
+                <img src="assets/images/banner1responsive.png" alt="Banner 1">
+            </a>
+        </div>
+    </div>
+</section>
+
+   <!-- Sección Sobre Nosotros -->
+   <section id="empresa" class="empresa">
+    <div class="empresa-contenedor">
+        <h2>Sobre Nosotros</h2>
+
+        <!-- Descripción destacada -->
+        <div class="resaltado">
+            <p class="descripcion">
+                En **Velocia Motors**, nos especializamos en el mantenimiento y reparación de **motos**, ofreciendo un servicio integral tanto en la parte mecánica de motores como en el sistema eléctrico. Nuestro objetivo es hacer que el cuidado de tu moto sea lo más sencillo posible, brindando un servicio de alta calidad sin las preocupaciones de costos adicionales.
+            </p>
+        </div>
+
+        <div class="resaltado">
+            <p class="descripcion">
+                A través de nuestro innovador modelo de **suscripción mensual**, nuestros clientes disfrutan de una cobertura total para reparaciones, mantenimiento y mano de obra sin costo adicional. Si tu moto sufre algún problema en el motor, sistema eléctrico o cualquier otra parte esencial, nuestra suscripción se encarga de todo, asegurando que tu moto siga funcionando sin interrupciones. ¡La tranquilidad de tener a tu moto siempre en óptimas condiciones!
+            </p>
+        </div>
+
+        <div class="resaltado">
+            <p class="descripcion">
+                Ofrecemos una nueva forma de pensar en el mantenimiento de motos. Creemos que la suscripción mensual debe ser una inversión que valga la pena y, por ello, nuestros servicios de reparación y mano de obra son **totalmente gratuitos** mientras estés suscrito a nuestro plan. 
+            </p>
+        </div>
+
+        <!-- Imagen de la empresa -->
+        <div class="empresa-imagen">
+            <a href="#"><img src="assets/images/logo.png" alt="Taller Velocia Motors" /></a>
+        </div>
+        
+
+        <!-- Misión y Visión -->
+        <div class="empresa-info">
+            <div class="misión">
+                <h3>Misión</h3>
+                <p>Brindar un servicio integral de reparación y mantenimiento de motos, garantizando a nuestros clientes una experiencia única sin preocupaciones por costos adicionales. A través de nuestro modelo de suscripción, buscamos mantener las motos en su mejor estado y asegurar la satisfacción total de nuestros clientes.</p>
+            </div>
+            <div class="visión">
+                <h3>Visión</h3>
+                <p>Ser la primera opción para los motociclistas en busca de un servicio confiable y accesible. Aspiramos a transformar la industria del mantenimiento de motos, ofreciendo un modelo de suscripción innovador que permita a nuestros clientes disfrutar de su moto sin las preocupaciones tradicionales de costos inesperados por reparaciones.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="banner3medio">
+    
+        <img src="assets/images/banner3.png" alt="Banner 2">
+    
+</div>
+
+    <!-- Sección de Planes de Suscripción -->
+<section id="planes" class="planes">
+    <div class="contenedor">
+        <h2>Planes de Suscripción</h2>
+        <p class="descripcion">Elige el plan de suscripción que mejor se adapte a tus necesidades. Disfruta de cobertura completa para reparaciones, mantenimiento y más, sin preocuparte por los costos adicionales.</p>
+
+        <div class="planes-contenedor">
+            <!-- Plan Básico -->
+            <div class="plan plan-basico">
+                <h3>Básico</h3>
+                <p class="precio">$29.99/mes</p>
+                <ul>
+                    <li>Reparación de motor</li>
+                    <li>Mantenimiento regular</li>
+                    <li>Mano de obra gratuita en reparaciones</li>
+                    <li>Soporte en línea</li>
+                </ul>
+                <p class="beneficios">Ideal para quienes buscan lo esencial y mantener su moto en buen estado sin complicaciones.</p>
+                <button class="btn-plan">Suscribirse</button>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="plan plan-premium">
+                <h3>Premium</h3>
+                <p class="precio">$49.99/mes</p>
+                <ul>
+                    <li>Todo lo incluido en el plan Básico</li>
+                    <li>Reparación de sistema eléctrico</li>
+                    <li>Descuentos en piezas y repuestos</li>
+                    <li>Acceso prioritario en reparaciones</li>
+                    <li>Soporte técnico telefónico 24/7</li>
+                </ul>
+                <p class="beneficios">Perfecto para quienes buscan cobertura total y beneficios adicionales para un servicio sin preocupaciones.</p>
+                <button class="btn-plan">Suscribirse</button>
+            </div>
+
+            <!-- Plan Deluxe -->
+            <div class="plan plan-deluxe">
+                <h3>Deluxe</h3>
+                <p class="precio">$69.99/mes</p>
+                <ul>
+                    <li>Todo lo incluido en el plan Premium</li>
+                    <li>Mantenimiento preventivo ilimitado</li>
+                    <li>Revisión anual completa de la moto</li>
+                    <li>Asistencia en carretera</li>
+                    <li>Servicio express para reparaciones urgentes</li>
+                </ul>
+                <p class="beneficios">La opción más completa para quienes buscan el mejor servicio y máxima tranquilidad.</p>
+                <button class="btn-plan">Suscribirse</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Sección de contacto -->
+ <section id="contacto" class="contacto-section">
+    <h2>Contáctanos</h2>
+    <p>Nos encantaría saber de ti. ¡Envíanos un mensaje!</p>
+
+    <div class="contacto-formulario">
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Velocia Motors. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script> <!-- Vincula tu archivo JS -->
+</body>
+</html>
+    
