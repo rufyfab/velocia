@@ -76,20 +76,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevenir que se recargue la página
-
-    const formData = new FormData(this);
-    
-});
-fetch('https://script.google.com/macros/s/1ZHhBZkR9iZCsVcjrymaRURHitjeJVK45LvO48rLzKpo/exec', {
-    method: 'POST',
-    body: new FormData(document.getElementById('contactForm')),
-    mode: 'no-cors'  // Esto deshabilita la política CORS
-})
-.then(response => {
-    // manejar la respuesta
-})
-.catch(error => {
-    console.error('Error:', error);
-});
