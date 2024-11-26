@@ -81,19 +81,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     const formData = new FormData(this);
     
-    fetch('https://script.google.com/macros/s/TU_ID_DE_HOJA/exec', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(result => {
-        // Mostrar el mensaje en la misma página
-        document.getElementById('responseMessage').textContent = result;
-    })
-    .catch(error => {
-        // Mostrar error si algo sale mal
-        document.getElementById('responseMessage').textContent = 'Hubo un error. Intenta de nuevo.';
-    });
 });
 fetch('https://script.google.com/macros/s/1ZHhBZkR9iZCsVcjrymaRURHitjeJVK45LvO48rLzKpo/exec', {
     method: 'POST',
