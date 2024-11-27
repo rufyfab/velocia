@@ -82,7 +82,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     const formData = new FormData(this); // Captura los datos del formulario
 
-    fetch('https://script.google.com/macros/s/AKfycbzgsHQD9nqWRUSFtZf3bUq_dGZOorgQj69hAPt5wdIJMducFJTvoUCvw-JjFIqmAZ8T/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyPNvKmaNyBzKXKScH8nfEHWwcqFMF2xMJ6MsjfsrtCVsasc4FEPZU_euciAs_8PkOQ/exec', {
         method: 'POST', // Método POST
         body: formData, // Enviar datos como FormData
     })
