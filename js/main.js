@@ -1,5 +1,5 @@
 // Seleccionamos el icono del menú y el contenedor del menú
-const menuToggle = document.querySelector('#ico-menu');  // Cambié la clase por el id que has utilizado
+const menuToggle = document.querySelector('#ico-menu'); // Cambié la clase por el id que has utilizado
 const navLinks = document.querySelector('.nav-links');
 
 // Comprobamos si el icono del menú y el contenedor del menú existen
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 // Utilizamos max-height para un efecto de deslizamiento
                 if (faqItem.classList.contains('active')) {
-                    faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";  // Mostrar la respuesta con deslizamiento
+                    faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px"; // Mostrar la respuesta con deslizamiento
                 } else {
-                    faqAnswer.style.maxHeight = 0;  // Ocultar la respuesta
+                    faqAnswer.style.maxHeight = 0; // Ocultar la respuesta
                 }
             });
         });
@@ -76,19 +76,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Manejo del envío del formulario de contacto
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Evita el recargado de la página
+    event.preventDefault(); // Evita el recargado de la página
 
-    const formData = new FormData(this);  // Captura los datos del formulario
+    const formData = new FormData(this); // Captura los datos del formulario
 
     fetch('https://script.google.com/macros/s/AKfycbyPNvKmaNyBzKXKScH8nfEHWwcqFMF2xMJ6MsjfsrtCVsasc4FEPZU_euciAs_8PkOQ/exec', {
-        method: 'POST',  // Método POST
-        body: formData,  // Enviar datos como FormData
+        method: 'POST', // Método POST
+        body: formData, // Enviar datos como FormData
     })
     .then(response => response.text())
     .then(result => {
         console.log("Respuesta del servidor: ", result);
-        document.getElementById('responseMessage').textContent = result;
+        document.getElementById('responseMessage').textContent = result; // Mostrar la respuesta
+
+        // Limpia los campos del formulario
+        document.getElementById('contactForm').reset();
     })
     .catch(error => {
         console.error("Error en el envío: ", error);
@@ -96,4 +100,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             'Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.';
     });
 });
-
