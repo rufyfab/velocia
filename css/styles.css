@@ -10,11 +10,10 @@ body {
 /* Header */
 header {
     
-    background-color: #fffcfc;
+    background-color: #000000;
     color: white;
     position: relative;
     text-align: none;
-    position: fixed; /* Hacemos que el header quede fijo en la parte superior */
     top: 0; /* Aseguramos que se quede en la parte superior */
     left: 0; /* Aseguramos que esté alineado a la izquierda */
     width: 100%; /* El ancho debe ocupar todo el espacio disponible */
@@ -23,7 +22,7 @@ header {
 }
 
 nav {
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 0px 10px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -40,7 +39,7 @@ nav .logo img {
     cursor: pointer;
     width: 10%;
     height: 10%;
-    
+    MARGIN: 10PX;
 }
 
 /* Menú desplegable */
@@ -85,11 +84,11 @@ nav .logo img {
 
 /* Carrusel */
 #banner {
-    padding: 20px 0;
+    /*padding: 20px 0;*/
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: 20%;
+    /*margin-top: 20%;*/
     z-index: 0;
     background-color: #483acb17;
 }
@@ -267,9 +266,9 @@ footer {
 }
 
 .empresa-imagen {
-    margin: 20px auto;
+    /*margin: 20px auto;
     width: 80%;
-    max-width: 600px; /* Limitar el tamaño máximo de la imagen */
+    max-width: 600px;  Limitar el tamaño máximo de la imagen */
 }
 
 .empresa-imagen img {
@@ -409,8 +408,8 @@ footer {
 
 .plan:hover {
     transform: translateY(-5px); /* Efecto hover */
-    box-shadow: 0 10px 15px rgb(73 57 209 / 45%) /* Sombra al hacer hover */
-}
+    box-shadow: 0 0px 25px rgb(73 57 209); } /* Sombra al hacer hover */
+
 
 .faq {
     background-color: #f4f4f4;
@@ -478,7 +477,7 @@ footer {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #4d40e6f5;
+    background-color: #cf321d;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -590,7 +589,7 @@ footer {
 }
 /* Estilo para resaltar las descripciones */
 .resaltado {
-    background-color: #f9f9f9;  /* Fondo gris claro para resaltar */
+    background-color: #887cde29;  /* Fondo gris claro para resaltar */
     padding: 20px;              /* Espaciado alrededor del contenido */
     border-radius: 10px;        /* Bordes redondeados */
     margin-bottom: 20px;        /* Espaciado entre las secciones */
@@ -613,3 +612,37 @@ footer {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
+.cta-button {
+    position: absolute; /* Ajusta según la posición deseada */
+    top: 70%; /* Cambia según necesites */
+    left: 50%; /* Cambia según necesites */
+    transform: translate(-50%, -50%);
+    background-color: #0d971c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Efecto hover */
+  .cta-button:hover {
+    background-color: #ff2e00;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  /* Animación de pulso */
+  @keyframes pulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  
