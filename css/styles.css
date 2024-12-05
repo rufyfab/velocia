@@ -75,13 +75,25 @@ nav .logo img {
     text-align: left;
     padding: 15px;
     border-top: 1px solid #444;
+    transition: background-color 0.3s, color 0.3s; /* Agregamos transición */
 }
 .nav-links li a {
     display: block;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
+    transition: color 0.3s; /* Transición suave del color */
 }
+
+/* Efecto hover para cambiar el fondo y el color del texto */
+.nav-links li:hover {
+    background-color: #030303; /* Cambia el fondo al pasar el mouse */
+}
+
+.nav-links li a:hover {
+    color: #fff; /* Cambia el color del texto cuando el ratón pasa sobre el enlace */
+}
+
 
 /* Carrusel */
 #banner {
@@ -647,3 +659,190 @@ footer {
     }
   }
   
+ /* Ajustes específicos para pantallas grandes */
+@media (min-width: 768px) {
+    /* Ocultar el menú hamburguesa */
+    .header__principal-ico-menu {
+        display: none;
+    }
+
+    /* Centrar el logo */
+    nav {
+        flex-direction: column; /* Cambiar dirección a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+
+    /* Ajustar el logo */
+    nav .logo img {
+        width: auto; /* Mantener el tamaño natural del logo */
+        max-width: 200px; /* Tamaño máximo opcional */
+    }
+
+    /* Mostrar las opciones del menú en fila debajo del logo */
+    .nav-links {
+        position: static; /* Quitar posición absoluta */
+        display: flex; /* Mostrar los elementos en línea */
+        flex-direction: row; /* Asegurar que estén en fila */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Alinear verticalmente */
+        gap: 20px; /* Espaciado entre los elementos */
+        max-height: none; /* Quitar restricciones de altura */
+        opacity: 1; /* Asegurar visibilidad */
+        background-color: transparent; /* Fondo opcional */
+        box-shadow: none; /* Quitar sombras */
+    }
+
+    .nav-links li {
+        border: none; /* Quitar bordes */
+        padding: 0;
+    }
+
+    .nav-links li a {
+        color: #f8f7f7; /* Ajustar el color del texto si es necesario */
+        font-size: 1.2rem; /* Tamaño del texto */
+    }
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  /* Menú en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .menu ul {
+      flex-direction: column;
+      display: none; /* Ocultamos el menú por defecto */
+    }
+  
+    .menu.active ul {
+      display: block; /* Mostramos el menú cuando se active */
+    }
+  }
+  .nav-links.menu a {
+    /* Aquí podrías agregar otras propiedades, como el padding o margen */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de forma uniforme */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Cambia el color de los enlaces */
+}
+
+
+/* General section styling */
+section {
+    background-color: #111;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  /* Flex layout adjustments for responsive design */
+  @media (min-width: 1024px) {
+    section {
+      padding: 80px 40px;
+    }
+  }
+  
+  section .flex {
+    
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  section h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #fbc600; /* Orange */
+    color: white;
+    font-size: 17px;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #111;
+    cursor: pointer;
+  }
+  
+  /* Contact info section styling */
+  section .flex p {
+    color: #e5e7eb; /* Light gray for text */
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  section .flex svg {
+    fill: #fbc600; /* Orange color for icons */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Hover effect for each contact info */
+  section .flex p:hover {
+    color: #f97316;  /*Highlight text on hover */
+    cursor: pointer;
+  }
+  
+  /* Adjusting gap for small screens */
+  @media (max-width: 768px) {
+    section {
+      padding: 40px 10px;
+    }
+    section .flex {
+      gap: 20px;
+    }
+  }
+  
+ /*alineacion de icono y texto antes del foother*/
+  .flex p {     
+    align-items: center;
+    display: flex
+;
+    flex-direction: row;}
+
+    /* Estilo inicial para los elementos del menú */
+.nav-links.menu a {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente */
+    font-weight: 500; /* Grosor de la fuente */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Estilo cuando el mouse pasa por encima del enlace */
+  .nav-links.menu a:hover {
+    background-color: #fbc600; /* Cambia el color de fondo a naranja */
+    color: black; /* Cambia el color del texto a negro */
+    border-radius: 25px; /* Mantén los bordes redondeados */
+  }
