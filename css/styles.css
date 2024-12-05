@@ -750,7 +750,7 @@ footer {
 section {
     background-color: #111;
     padding: 40px 20px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   
   /* Flex layout adjustments for responsive design */
@@ -814,7 +814,7 @@ section {
   /* Adjusting gap for small screens */
   @media (max-width: 768px) {
     section {
-      padding: 40px 10px;
+      padding:0px 0px;
     }
     section .flex {
       gap: 20px;
