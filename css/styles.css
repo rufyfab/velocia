@@ -756,7 +756,7 @@ section {
   /* Flex layout adjustments for responsive design */
   @media (min-width: 1024px) {
     section {
-      padding: 80px 40px;
+     /* padding: 80px 40px;*/
     }
   }
   
