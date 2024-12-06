@@ -101,7 +101,7 @@ nav .logo img {
     width: 100%;
     overflow: hidden;
     position: relative;
-    /*margin-top: 20%;*/
+    margin-top: 20%;
     z-index: 0;
     background-color: #483acb17;
 }
