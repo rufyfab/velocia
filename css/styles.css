@@ -846,3 +846,51 @@ section {
     color: black; /* Cambia el color del texto a negro */
     border-radius: 25px; /* Mantén los bordes redondeados */
   }
+
+
+/*--------seccion de wue nos diferncia---------*/
+
+
+.diferenciales {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.diferenciales h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.diferenciales p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.diferenciales ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.diferenciales ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.diferenciales .btn {
+  text-decoration: none;
+  background-color: #f97316;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.diferenciales .btn:hover {
+  background-color: white;
+  color: #111;
+}
