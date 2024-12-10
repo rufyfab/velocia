@@ -284,12 +284,12 @@ footer {
     max-width: 600px;  Limitar el tamaño máximo de la imagen */
 }
 
-.empresa-imagen img {
+/*.empresa-imagen img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Agregar bordes redondeados a la imagen */
+    border-radius: 8px; /* Agregar bordes redondeados a la imagen 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .empresa-info {
     display: flex;
