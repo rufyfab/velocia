@@ -852,6 +852,10 @@ section {
 
 
 .diferenciales {
+
+  background-image: url('../assets/images/diferentesimg.png');
+  background-size: cover;
+  position: relative;
   background-color: #111;
   color: white;
   padding: 40px 20px;
@@ -859,7 +863,14 @@ section {
   border-radius: 10px;
 }
 
+.diferenciales img {
+    opacity: 0.1;
+   position:absolute
+  }
+
 .diferenciales h2 {
+    z-index: 5;
+    position: relative;
     color:#fbc600;
   font-size: 2rem;
   margin-bottom: 20px;
@@ -867,6 +878,8 @@ section {
 }
 
 .diferenciales p {
+    position:relative;
+    z-index: 5;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
@@ -895,3 +908,4 @@ section {
   background-color: white;
   color: #111;
 }
+
