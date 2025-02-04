@@ -350,6 +350,10 @@ footer {
     margin-bottom: 20px;
     color: #333;
 }
+/*estilo para el check de los planes*/
+.icon-check{
+color: #fbc600;
+}
 
 .descripcion {
     font-size: 1.2rem;
@@ -908,4 +912,3 @@ section {
   background-color: white;
   color: #111;
 }
-
