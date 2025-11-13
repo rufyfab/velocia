@@ -341,7 +341,7 @@ footer {
 .planes {
     border-radius: 10px;
     padding: 60px 20px;
-    background-color: #fff5cf;
+    background-color: #887cde29;
     text-align: center;
 }
 
@@ -913,3 +913,82 @@ section {
   color: #111;
 }
 
+
+/*estilo para el footer*/
+.footer-pagina {
+    background-color: #333333; /* Fondo oscuro */
+    color: #f8f8f8; /* Texto claro */
+    /*padding: 20px;*/
+  }
+  
+  .footer__contenido {
+    /*display: none;*/
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se reacomoden en pantallas pequeñas */
+    gap: 20px;
+  }
+  
+  .footer__logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer__info, .footer__navegacion {
+    margin: 30px;
+    flex: 1;
+    min-width: 200px; /* Ancho mínimo para que se vean bien */
+  }
+
+  .footer__info, p {
+    margin: 6px;
+}
+  
+  .footer__titulo-columna {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer__navegacion a {
+    display: block;
+    color: #f8f8f8;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__navegacion a:hover {
+    color: #f97316; /* Efecto hover en enlaces */
+  }
+  
+  .footer__footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+  }
+  
+ /* footer contenido redes iconos*/
+  .footer__redes-iconos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .footer__redes-iconos a img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+  }
+  
+  .footer__redes-iconos a img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
